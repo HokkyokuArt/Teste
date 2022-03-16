@@ -1,0 +1,73 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    
+}
+
+body.back_ground{
+    background-position: center;
+    background-image:
+    linear-gradient(rgb(0, 27, 0, 0.5),rgb(0, 27, 0, 0.3)),
+    url(https:\/\/peon.moda\/wp-content\/uploads\/2022\/03\/05.jpg) ;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment:fixed;
+    
+
+
+    /* backdrop-filter: blur(3px); */
+    /* backdrop-filter: brightness(60%); */
+    /* backdrop-filter: contrast(40%); */
+    /* backdrop-filter: drop-shadow(10px 400px 10px rgb(0, 255, 21)); */
+    /* backdrop-filter: grayscale(70%); */
+    /* backdrop-filter: hue-rotate(120deg); */
+    /* backdrop-filter: invert(100%); */
+    /* backdrop-filter: opacity(100%); */
+    /* backdrop-filter: sepia(50%) ; */
+    /* backdrop-filter: saturate(0%); */
+    
+    
+
+}
+
+.apresentation{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+
+
+.material-icons.md-80{
+    font-size: 80px;
+    margin-bottom: 0.5%;
+    color: rgb(159, 202, 146);
+    border: solid 3px rgb(47, 66, 46) ;
+}
+
+header{
+    height: 100px;
+    font-size: 100px;
+    font-weight: bold;
+
+
+}
+
+main,footer{
+    font-size: 50px;
+}
+main{
+    height: 2000px;
+   
+}
+
+footer{
+    height: 50px;
+    
+
+}
