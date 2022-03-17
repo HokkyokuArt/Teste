@@ -7,6 +7,16 @@
     
 }
 
+.font_title{
+    font-size:500%;
+    color: #fff;
+    font-weight: bold;
+}
+.font_contents{
+    font-size:50px;
+    color: #fff;
+}
+
 body.back_ground{
     background-position: center;
     background-image:
@@ -33,49 +43,134 @@ body.back_ground{
 
 }
 
-.apresentation{
+#presentation{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     
 }
+#presentation:hover{
+    cursor:default;
+}
+
+#bem_vindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
 
 
 
 .material-icons.md-80{
-    padding: 3px;
+    padding: 0px;
     font-size: 80px;
     margin-bottom: 0.5%;
-    color: rgb(159, 202, 146);
+    color: transparent;
    
 }
+
 .material-icons.md-80:hover{
-    color: rgb(64, 95, 58);
-    padding:0;
-    border-radius:50%;
     cursor: pointer;
     background-image: linear-gradient(transparent,rgba(20, 39, 9, 0.3), transparent);
 }
 
+
 header{
-    height: 100px;
-    font-size: 100px;
-    font-weight: bold;
-
+    margin: 2%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 
-main,footer{
-    font-size: 50px;
-}
 main{
-    height: 2000px;
+    height: auto;
    
 }
 
-footer{
-    height: 50px;
-    
+#blc{
+    /* background-color: black; */
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
 
+}
+
+footer{
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.btn_link{
+    width: auto;
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+#peon{
+    font-weight: bold;
+    text-decoration:none;
+    color: rgb(159, 202, 146);
+
+}
+.btn_link:hover{
+    color: #fff;
+    background-color: rgb(0, 27, 0, 0.5);
+}
+
+/* Animações */
+
+/* Animação icon */
+.material-icons.md-80::before{
+    content: 'expand_more';
+	display:flex;
+	width: auto;
+	height: 0;
+	position: relative;
+	border-radius: 4px;
+	color: rgb(159, 202, 146);
+	animation-name: continue;
+    animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes continue {
+	from {
+		top: -15px;
+	}
+    to {
+		top: 15px;
+	}
+}
+
+/* Animação do conteúdo  */
+[data-anime]{
+    opacity: 0;
+    transition: 0.5s;
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/* Back ground blur */
+[data-background]{
+    backdrop-filter: blur(0px);
+    transition: 1.5s;
+}
+[data-background].blur{
+    backdrop-filter: blur(25px);
 }
